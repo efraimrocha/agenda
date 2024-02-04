@@ -1,5 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from core.models import Evento
+
+# def index(request):
+#     return redirect('/agenda/')
+    
 
 def lista_eventos(request):
     evento = Evento.objects.all()
